@@ -1,0 +1,21 @@
+GET http://localhost:5555/cars HTTP/1.1
+###
+GET http://localhost:5555/users HTTP/1.1
+###
+
+GET http://localhost:5555/cars/64d64692e7be2a75cd6f43e7 HTTP/1.1
+###
+GET http://localhost:5555/cars?name=American gods HTTP/1.1
+####
+GET http://localhost:5555/cars/1 HTTP/1.1
+
+
+###
+POST http://localhost:5555/cars HTTP/1.1
+Content-Type: application/json
+
+{
+    "model":"Mers",
+    "price": 12555
+
+}
